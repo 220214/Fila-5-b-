@@ -1,4 +1,5 @@
 
+package br.mari.Filaint;
 
 	public class Fila {
 	No inicio;
@@ -15,7 +16,7 @@
 			return false;
 		}
 	}
-	public void insert (String valor) {
+	public void insert (int valor) {
 		No elemento = new No();
 		elemento.dado = valor;
 		elemento.proximo = null;
@@ -30,7 +31,7 @@
 			fim=elemento;
 		}
 	}
-	public String remove()throws Exception{
+	public int remove()throws Exception{
 		if (isEmpty()) {
 			throw new Exception("Fila vazia");
 		}

@@ -1,8 +1,9 @@
 
 
-	
+
+package br.mari.Filaint;	
 	public class  No {
-			String dado;
+		int dado;
 			No proximo;
 			@Override
 	public  String toString (){
